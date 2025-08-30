@@ -21,7 +21,7 @@ workflows:
           shell: bash
           filters: *filters
       - orb-tools/publish:
-          orb-name: circleci/continuation
+          orb-name: moritz-wundke/continuation
           vcs-type: << pipeline.project.type >>
           requires:
             - orb-tools/lint
